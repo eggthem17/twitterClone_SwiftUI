@@ -26,6 +26,9 @@
 		5B888AC5291E8CEE002C7458 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B888AC4291E8CEE002C7458 /* UserStatsView.swift */; };
 		5BECDA08292779150021330F /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECDA07292779150021330F /* NewTweetView.swift */; };
 		5BECDA0A29277FBD0021330F /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECDA0929277FBD0021330F /* TextArea.swift */; };
+		5BECDA0F2927EBD10021330F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECDA0E2927EBD10021330F /* LoginView.swift */; };
+		5BECDA112927EBE20021330F /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECDA102927EBE20021330F /* RegistrationView.swift */; };
+		5BECDA132927ED8E0021330F /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BECDA122927ED8E0021330F /* RoundedShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		5B888AC4291E8CEE002C7458 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		5BECDA07292779150021330F /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
 		5BECDA0929277FBD0021330F /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		5BECDA0E2927EBD10021330F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5BECDA102927EBE20021330F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		5BECDA122927ED8E0021330F /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		5B7EABE9290BAA0E0000BCDF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5BECDA0B2927EBB00021330F /* Authentication */,
 				5B7EABEE290BAA340000BCDF /* Components */,
 				5BECDA03292778E00021330F /* UploadTweet */,
 				5B888ABB291E865D002C7458 /* SideMenu */,
@@ -162,6 +169,7 @@
 				5B4236ED291D49E900F647CD /* Users */,
 				5B7EABF4290BAB740000BCDF /* Tweets */,
 				5BECDA0929277FBD0021330F /* TextArea.swift */,
+				5BECDA122927ED8E0021330F /* RoundedShape.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -296,6 +304,31 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		5BECDA0B2927EBB00021330F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5BECDA0D2927EBC40021330F /* Views */,
+				5BECDA0C2927EBBE0021330F /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		5BECDA0C2927EBBE0021330F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5BECDA0D2927EBC40021330F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BECDA0E2927EBD10021330F /* LoginView.swift */,
+				5BECDA102927EBE20021330F /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,7 +411,10 @@
 				5B7EABF2290BAA9B0000BCDF /* FeedView.swift in Sources */,
 				5BECDA0A29277FBD0021330F /* TextArea.swift in Sources */,
 				5B888AC3291E86BC002C7458 /* SideMenuViewModel.swift in Sources */,
+				5BECDA0F2927EBD10021330F /* LoginView.swift in Sources */,
+				5BECDA112927EBE20021330F /* RegistrationView.swift in Sources */,
 				5BECDA08292779150021330F /* NewTweetView.swift in Sources */,
+				5BECDA132927ED8E0021330F /* RoundedShape.swift in Sources */,
 				5B4236EF291D49FA00F647CD /* UserRowView.swift in Sources */,
 				5B7EAC00290C1AF00000BCDF /* ExploreView.swift in Sources */,
 				5B7EABF9290C1A060000BCDF /* MainTabView.swift in Sources */,
