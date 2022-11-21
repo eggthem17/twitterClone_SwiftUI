@@ -15,24 +15,7 @@ struct LoginView: View {
 		VStack {
 			
 			//header view
-			VStack(alignment: .leading) {
-				HStack {
-					Spacer()
-				}
-				
-				Group {
-					Text("Hello.")
-					
-					Text("Welcom Back")
-				}
-				.font(.largeTitle)
-				.fontWeight(.semibold)
-			}
-			.frame(height: 260)
-			.padding(.leading)
-			.background(Color(.systemBlue))
-			.foregroundColor(.white)
-			.clipShape(RoundedShape(corners: .bottomRight))
+			AuthHeaderView(upperTitle: "Hello.", lowerTitle: "Welcom Back")
 			
 			VStack(spacing: 40) {
 				CustomTextField(imageName: "envelope", placeholderText: "Email", fieldType: .normal, text: $email)

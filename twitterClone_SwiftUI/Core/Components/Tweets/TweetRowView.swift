@@ -23,13 +23,13 @@ struct TweetRowView: View {
 						Text("Marcus")
 							.font(.subheadline).bold()
 						
-						Text("@philosophy")
-							.foregroundColor(.gray)
-							.font(.caption)
-						
-						Text("2d")
-							.foregroundColor(.gray)
-							.font(.caption)
+						Group {
+							Text("@philosophy")
+							
+							Text("2d")
+						}
+						.foregroundColor(.gray)
+						.font(.caption)
 					}
 					
 					//tweet caption
@@ -45,7 +45,6 @@ struct TweetRowView: View {
 					// action
 				} label: {
 					Image(systemName: "bubble.left")
-						.font(.subheadline)
 				}
 				
 				Spacer()
@@ -54,7 +53,6 @@ struct TweetRowView: View {
 					// action
 				} label: {
 					Image(systemName: "arrow.2.squarepath")
-						.font(.subheadline)
 				}
 				
 				Spacer()
@@ -63,7 +61,6 @@ struct TweetRowView: View {
 					// action
 				} label: {
 					Image(systemName: "heart")
-						.font(.subheadline)
 				}
 				
 				Spacer()
@@ -72,9 +69,9 @@ struct TweetRowView: View {
 					// action
 				} label: {
 					Image(systemName: "bookmark")
-						.font(.subheadline)
 				}
 			}
+			.font(.subheadline)
 			.padding()
 			.foregroundColor(.gray)
 			
