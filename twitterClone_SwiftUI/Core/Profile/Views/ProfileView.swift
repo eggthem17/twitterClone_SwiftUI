@@ -49,8 +49,8 @@ extension ProfileView {
 						.resizable()
 						.frame(width: 20, height: 16)
 						.foregroundColor(.white)
-						.offset(x: 16, y: 12)
 				}
+				.offset(x: 16, y: 12)
 
 				Circle()
 					.frame(width: 72, height: 72)
@@ -58,6 +58,7 @@ extension ProfileView {
 			}
 		}
 		.frame(height: 96)
+		.toolbar(.hidden, for: .navigationBar)
 	}
 	
 	var actionButtons: some View {
@@ -115,7 +116,7 @@ extension ProfileView {
 				HStack {
 					Image(systemName: "link")
 					
-					Text("www.chillog.page")
+					Text("https://chillog.page")
 				}
 			}
 			.font(.caption)
