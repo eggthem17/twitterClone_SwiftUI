@@ -12,6 +12,10 @@ struct ProfilePhotoSelectorView: View {
 	@State private var selectedImage: UIImage?
 	@State private var profileImage: Image?
 	
+	@EnvironmentObject var viewModel: AuthViewModel
+	
+	@Environment(\.dismiss) var dismiss
+	
     var body: some View {
 		VStack {
 			AuthHeaderView(upperTitle: "Setup account", lowerTitle: "Add a profile photo")
@@ -35,9 +39,10 @@ struct ProfilePhotoSelectorView: View {
 			}
 			.padding(.top, 50)
 			
-			if profileImage != nil {
+			if let selectedImage = selectedImage {
 				Button {
-					print("debug: finish registration user")
+					viewModel.uploadProfileImage(selectedImage)
+					dismiss()
 				} label: {
 					Text("Continue")
 						.font(.headline)
@@ -68,7 +73,7 @@ private struct ProfileImageModifier: ViewModifier {
 	func body(content: Content) -> some View {
 		content
 			.frame(width: 180, height: 180)
-			.scaledToFit()
+			.scaledToFill()
 	}
 }
 
