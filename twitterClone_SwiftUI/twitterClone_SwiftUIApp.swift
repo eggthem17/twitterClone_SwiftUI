@@ -19,7 +19,8 @@ struct twitterClone_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
 			NavigationStack {
-				ContentView()
+//				ContentView()
+				ProfilePhotoSelectorView()
 			}
 			.environmentObject(viewModel)
 			.toolbarBackground(.visible, for: .navigationBar)
