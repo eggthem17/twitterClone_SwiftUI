@@ -20,8 +20,8 @@ struct twitterClone_SwiftUIApp: App {
         WindowGroup {
 			NavigationStack {
 				ContentView()
-					.environmentObject(viewModel)
 			}
+			.environmentObject(viewModel)
         }
     }
 }
