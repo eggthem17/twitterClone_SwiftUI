@@ -11,6 +11,7 @@ struct CustomTextField: View {
 	let imageName: String
 	let placeholderText: String
 	let fieldType: FieldType
+	
 	@Binding var text: String
 	
 	enum FieldType {

@@ -22,6 +22,7 @@ struct twitterClone_SwiftUIApp: App {
 				ContentView()
 			}
 			.environmentObject(viewModel)
+			.toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
