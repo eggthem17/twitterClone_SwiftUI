@@ -9,7 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
 	@State private var showMenu = false
+	@EnvironmentObject var viewModel: AuthViewModel
+	
     var body: some View {
+		Group {
+			//need login
+			if viewModel.userSession == nil {
+				LoginView()
+			} else {
+				//login successfuly
+				mainInterfaceView
+			}
+		}
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+extension ContentView {
+	var mainInterfaceView: some View {
 		ZStack(alignment: .topLeading) {
 			MainTabView()
 				.toolbar(showMenu ? .hidden : .visible)
@@ -31,7 +53,6 @@ struct ContentView: View {
 			SideMenuView()
 				.frame(width: 300)
 				.offset(x: showMenu ? 0 : -300, y: 0)
-//				.background(showMenu ? Color.white : Color.clear)
 		}
 		.navigationTitle("Home")
 		.navigationBarTitleDisplayMode(.inline)
@@ -50,11 +71,5 @@ struct ContentView: View {
 		.onAppear {
 			showMenu = false
 		}
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	}
 }

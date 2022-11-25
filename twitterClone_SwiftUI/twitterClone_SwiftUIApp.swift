@@ -10,6 +10,8 @@ import Firebase
 
 @main
 struct twitterClone_SwiftUIApp: App {
+	@StateObject var viewModel = AuthViewModel()
+	
 	init() {
 		FirebaseApp.configure()
 	}
@@ -18,7 +20,7 @@ struct twitterClone_SwiftUIApp: App {
         WindowGroup {
 			NavigationStack {
 				ContentView()
-//				LoginView()
+					.environmentObject(viewModel)
 			}
         }
     }

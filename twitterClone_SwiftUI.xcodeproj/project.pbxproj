@@ -12,6 +12,7 @@
 		5B1F525229305F0E004B0EB8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5B1F525129305F0E004B0EB8 /* FirebaseFirestore */; };
 		5B1F525429305F0E004B0EB8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5B1F525329305F0E004B0EB8 /* FirebaseFirestoreSwift */; };
 		5B1F525629305F0E004B0EB8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5B1F525529305F0E004B0EB8 /* FirebaseStorage */; };
+		5B1F52582930614E004B0EB8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F52572930614E004B0EB8 /* AuthViewModel.swift */; };
 		5B4236EC291D413800F647CD /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4236EB291D413800F647CD /* TweetFilterViewModel.swift */; };
 		5B4236EF291D49FA00F647CD /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4236EE291D49FA00F647CD /* UserRowView.swift */; };
 		5B7EABDC290BA9F30000BCDF /* twitterClone_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7EABDB290BA9F30000BCDF /* twitterClone_SwiftUIApp.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		5B1F524C29305E9D004B0EB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5B1F52572930614E004B0EB8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		5B4236EB291D413800F647CD /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 		5B4236EE291D49FA00F647CD /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		5B7EABD8290BA9F30000BCDF /* twitterClone_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twitterClone_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -341,6 +343,7 @@
 		5BECDA0C2927EBBE0021330F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5B1F52572930614E004B0EB8 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				5BECDA08292779150021330F /* NewTweetView.swift in Sources */,
 				5BECDA132927ED8E0021330F /* RoundedShape.swift in Sources */,
 				5BEBC754292A4F3400CD6630 /* AuthHeaderView.swift in Sources */,
+				5B1F52582930614E004B0EB8 /* AuthViewModel.swift in Sources */,
 				5B4236EF291D49FA00F647CD /* UserRowView.swift in Sources */,
 				5BEBC751292A43C100CD6630 /* CustomTextField.swift in Sources */,
 				5B7EAC00290C1AF00000BCDF /* ExploreView.swift in Sources */,
