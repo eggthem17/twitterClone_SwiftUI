@@ -10,6 +10,7 @@ import Firebase
 
 class AuthViewModel: ObservableObject {
 	@Published var userSession: FirebaseAuth.User?
+	@Published var didAuthenticateUser = false
 	
 	init() {
 		self.userSession = Auth.auth().currentUser
@@ -42,7 +43,6 @@ class AuthViewModel: ObservableObject {
 			guard let user = result?.user else {
 				return
 			}
-			self.userSession = user
 			
 			print("debug: registration successful")
 			print("debug: user is \(self.userSession)")
@@ -53,7 +53,7 @@ class AuthViewModel: ObservableObject {
 						"uid": user.uid]
 			
 			Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
-				print("debug: did upload user data")
+				self.didAuthenticateUser = true
 			}
 		}
 	}

@@ -13,6 +13,7 @@
 		5B1F525429305F0E004B0EB8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5B1F525329305F0E004B0EB8 /* FirebaseFirestoreSwift */; };
 		5B1F525629305F0E004B0EB8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5B1F525529305F0E004B0EB8 /* FirebaseStorage */; };
 		5B1F52582930614E004B0EB8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F52572930614E004B0EB8 /* AuthViewModel.swift */; };
+		5B1F525A2930A617004B0EB8 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F52592930A617004B0EB8 /* ProfilePhotoSelectorView.swift */; };
 		5B4236EC291D413800F647CD /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4236EB291D413800F647CD /* TweetFilterViewModel.swift */; };
 		5B4236EF291D49FA00F647CD /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4236EE291D49FA00F647CD /* UserRowView.swift */; };
 		5B7EABDC290BA9F30000BCDF /* twitterClone_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7EABDB290BA9F30000BCDF /* twitterClone_SwiftUIApp.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		5B1F524C29305E9D004B0EB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5B1F52572930614E004B0EB8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		5B1F52592930A617004B0EB8 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		5B4236EB291D413800F647CD /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 		5B4236EE291D49FA00F647CD /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		5B7EABD8290BA9F30000BCDF /* twitterClone_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twitterClone_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -353,6 +355,7 @@
 			children = (
 				5BECDA0E2927EBD10021330F /* LoginView.swift */,
 				5BECDA102927EBE20021330F /* RegistrationView.swift */,
+				5B1F52592930A617004B0EB8 /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				5B4236EC291D413800F647CD /* TweetFilterViewModel.swift in Sources */,
 				5B7EABF6290BAB950000BCDF /* TweetRowView.swift in Sources */,
 				5B888ABF291E8697002C7458 /* SideMenuView.swift in Sources */,
+				5B1F525A2930A617004B0EB8 /* ProfilePhotoSelectorView.swift in Sources */,
 				5B7EAC04290C1B330000BCDF /* MessageView.swift in Sources */,
 				5B7EABF2290BAA9B0000BCDF /* FeedView.swift in Sources */,
 				5BECDA0A29277FBD0021330F /* TextArea.swift in Sources */,
