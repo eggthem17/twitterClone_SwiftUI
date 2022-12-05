@@ -22,6 +22,6 @@ struct twitterClone_SwiftUIApp: App {
 				ContentView()
 			}
 			.environmentObject(viewModel)
-        }
+		}
     }
 }
