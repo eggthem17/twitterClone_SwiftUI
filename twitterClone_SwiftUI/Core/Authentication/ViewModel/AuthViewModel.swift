@@ -32,7 +32,7 @@ class AuthViewModel: ObservableObject {
 				return
 			}
 			self.userSession = user
-			print("debug: did log user in")
+			self.fetchUser()
 		}
 	}
 	
@@ -72,6 +72,7 @@ class AuthViewModel: ObservableObject {
 		ImageUploader.uploadImage(image: image) { profileImageUrl in
 			Firestore.firestore().collection("users").document(uid).updateData(["profileImageUrl": profileImageUrl]) { _ in
 				self.userSession = self.tempUserSession
+				self.fetchUser()
 			}
 		}
 	}
