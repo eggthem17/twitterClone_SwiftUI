@@ -13,11 +13,26 @@ class TweetRowViewModel: ObservableObject {
 	
 	init(tweet: Tweet) {
 		self.tweet = tweet
+		checkingLike()
 	}
 	
 	func likeTweet() {
 		service.likeTweet(tweet) {
 			self.tweet.didLike = true
+		}
+	}
+	
+	func unlikeTweet() {
+		service.unlikeTweet(tweet) {
+			self.tweet.didLike = false
+		}
+	}
+	
+	func checkingLike() {
+		service.checkingLike(tweet) { didlike in
+			if didlike {
+				self.tweet.didLike = true
+			}
 		}
 	}
 }
