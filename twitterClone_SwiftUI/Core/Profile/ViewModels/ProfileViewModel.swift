@@ -12,6 +12,8 @@ class ProfileViewModel: ObservableObject {
 	@Published var likedTweets = [Tweet]()
 	
 	private let service = TweetService()
+	private let userService = UserService()
+	
 	let user: User
 	
 	init(user: User) {
@@ -53,6 +55,14 @@ class ProfileViewModel: ObservableObject {
 		
 		service.fetchLikedTweets(forUid: uid) { tweets in
 			self.likedTweets = tweets
+			
+			for i in 0 ..< tweets.count {
+				let uid = tweets[i].uid
+				
+				self.userService.fetchUser(withUid: uid) { user in
+					self.likedTweets[i].user = user
+				}
+			}
 		}
 	}
 }
