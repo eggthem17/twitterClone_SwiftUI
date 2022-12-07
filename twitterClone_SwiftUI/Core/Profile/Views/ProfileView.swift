@@ -86,7 +86,7 @@ extension ProfileView {
 			Button {
 				
 			} label: {
-				Text("Edit Profile")
+				Text(viewModel.actionButtonTitle)
 					.font(.subheadline).bold()
 					.frame(width: 120, height: 32)
 					.overlay {
